@@ -26,7 +26,7 @@ eye.addEventListener('mouseup',()=>{
 // this mask the password 
 fm.addEventListener('submit',(e)=>{
     e.preventDefault();//this will stop the page from reloading
-    const pd= 'victoria T';
+    const pd= 'abcd .VT';
     if (pd=== ipt.value) {
        user.remove();
         fm.remove();
@@ -44,3 +44,34 @@ fm.addEventListener('submit',(e)=>{
 start.addEventListener('click',() => {
     pan.classList.toggle('on');
 })
+//this format a Unix number into a human-redable date
+const dob = new Date ('11/16/2013').getTime(); //date format in javascript mm-dd-yyy
+pan.querySelector('#dob').textContent = Intl.DateTimeFormat('en',{dateStyle:'full'}).format(dob)
+
+//Funtion
+//A function is a group of statement that does not run unless when called 
+function calculator () {
+    console.log(2 + 4);
+    console.log(10 - 5);
+    console.log(10 / 2);
+    console.log(3 * 3);
+    console.log(5 % 3);
+
+}
+calculator();
+function callConfetti () {
+    /*
+    const t = "5+5"
+    const u = "7+31"
+    console.log(t + u) concatenation : joins strings together
+    */
+   const d = new Date("11/16/2013").getDate();
+//    const m = new Date("11/16/2013").getMonth();
+   const today = Date.now();
+   if(new Date(today).getDate() === d && new Date(today).getMonth() === m) {
+    pan.classList.add('bgi')
+   }
+   console.log(d)
+   console.log(m)
+}
+callConfetti();

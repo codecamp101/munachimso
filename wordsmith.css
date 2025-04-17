@@ -66,6 +66,7 @@
         width: 3em;
         background-repeat:no-repeat;
         background-image: url(trophy-outline.svg);
+        gap: 1em;
     }
     #cup > i {
         position: absolute;
@@ -92,7 +93,7 @@
     }
     #forward{
             left: 4em;
-            background-image: url(chevron-back-outlin.svg);
+            background-image: url(chevron-back-outline\ \(1\).svg);
     }
     #backward {
         right: 4em;
@@ -108,23 +109,33 @@ button{
 #action{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 2em;
     width: 70%;
     margin: 0 auto;
     /* border: 1px solid red; */
     padding: 2em 1em;    
+    background-image: url(error_fawzi_mourad.gif);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right center;
+    right: auto;
 }
 #checkbtn{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 2em;
     padding-left:  2em; 
 }
 
 #restartBtn{
     background-image: url(refresh-outline.svg);
+    background-size: 5em;
 }
 #hintBtn{
-    background-image:url(help-circle-outline.svg)
+    margin: 2em;
+    background-image:url(help-circle-outline.svg);
+    background-size: 5em;
+   
 }
 #restartBtn, #hintBtn, #cup {
     height: 4em;
